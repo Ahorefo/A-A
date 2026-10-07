@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <!-- Zarfın Ana Gövdesi (Pastel Pembe Dolgulu, Siyah Çizgili) -->
+    <path d="M 10 30 C 12 25, 88 25, 90 30 L 90 70 C 88 75, 12 75, 10 70 Z" 
+          fill="#fadadd" 
+          stroke="#2c2c2c" 
+          stroke-width="6" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+    
+    <!-- Zarfın Üst Kapağı -->
+    <path d="M 10 30 L 50 55 L 90 30" 
+          fill="none" 
+          stroke="#2c2c2c" 
+          stroke-width="6" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+          
+    <!-- Zarfın Mührü (Minik Kalp) -->
+    <path d="M 45 60 C 45 60, 41 53, 43 50 C 45 47, 50 47, 50 51 C 50 47, 55 47, 57 50 C 59 53, 55 60, 50 64 Z" 
+          fill="#ff4d6d" 
+          stroke="#2c2c2c" 
+          stroke-width="3" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+</svg>

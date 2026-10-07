@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff3f1">
+    <meta name="description" content="Sevdiğin kişi için hazırlanmış, kalplerle ve anılarla dolu küçük bir sürpriz.">
+    <title>Sana küçük bir sürpriz ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="paper-texture" aria-hidden="true"></div>
+    <div id="floating-hearts" aria-hidden="true"></div>
+    <div class="page-frame" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a class="wordmark" href="#" aria-label="Sürprizin başına dön">
+            <span class="wordmark-heart" aria-hidden="true">♡</span>
+            <span>küçük bir sürpriz</span>
+        </a>
+        <span class="header-note">senin için, sevgiyle <span aria-hidden="true">✿</span></span>
+    </header>
+
+    <main class="surprise" id="surprise">
+        <nav class="progress" aria-label="Sürpriz aşamaları">
+            <span class="progress-label" id="progress-label">01 <span>/</span> 05</span>
+            <ol>
+                <li class="progress-step is-current" aria-label="1. aşama" aria-current="step"></li>
+                <li class="progress-step" aria-label="2. aşama"></li>
+                <li class="progress-step" aria-label="3. aşama"></li>
+                <li class="progress-step" aria-label="4. aşama"></li>
+                <li class="progress-step" aria-label="5. aşama"></li>
+            </ol>
+            <span class="progress-caption">sürpriz yolculuğu</span>
+        </nav>
+
+        <button id="step1-btn" class="doodle-button start-button visible" type="button">
+            <span class="button-eyebrow">sana bir şey hazırladım</span>
+            <span>Hoş geldin bitanem</span>
+            <span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+
+        <section id="step2-container" class="message-stage hidden" aria-live="polite">
+            <span class="stage-kicker">küçük bir hatırlatma</span>
+            <h1 id="main-message" class="doodle-text">Birbirimize küssekte darılsakta bu hayatta her zaman arkamda olduğun için sana çok teşekkür ederim. Hayatımdaki en değerli insansın bunun her zaman bilincinde ol. Hiçbir zaman ümitsizliğe kapılma ben hep yanındayım bitanem<br>iyi ki varsın <span aria-hidden="true">💘</span></h1>
+            <p class="message-aside">Bunu her gün bil istedim.</p>
+            <button id="step3-btn" class="doodle-button continue-button pulsing hidden" type="button">
+                Bir sürpriz daha var <span aria-hidden="true">→</span>
+            </button>
+        </section>
+
+        <section id="step4-gallery" class="gallery-stage hidden" aria-label="Birlikte güzel anılarımız">
+            <div class="gallery-heading">
+                <span class="stage-kicker">biriktirdiğimiz güzellikler</span>
+                <h2 class="doodle-text">En sevdiğim anlar <span aria-hidden="true">♡</span></h2>
+                <p>Fotoğraflara dokun, biraz daha yakından bak.</p>
+            </div>
+            <div class="photo-grid">
+                <button class="photo-card photo-one" type="button" data-caption="Gülüşünün bütün günü güzelleştirdiği an">
+                    <span class="photo-image"><img src="img/image1.jpg" alt="Birlikte geçirdiğimiz güzel bir an" loading="eager" decoding="async"><span class="image-fallback" aria-hidden="true">♡</span></span>
+                    <span class="photo-caption">en güzel gülüş</span>
+                </button>
+                <button class="photo-card photo-two" type="button" data-caption="Yan yana olmanın yettiği o güzel an">
+                    <span class="photo-image"><img src="img/image2.jpg" alt="Birlikte hatırlamak istediğimiz bir an" loading="eager" decoding="async"><span class="image-fallback" aria-hidden="true">♡</span></span>
+                    <span class="photo-caption">yan yana</span>
+                </button>
+                <button class="photo-card photo-three" type="button" data-caption="Birlikteyken her şeyin daha güzel olduğu an">
+                    <span class="photo-image"><img src="img/image3.png" alt="Birlikte paylaştığımız özel bir an" loading="eager" decoding="async"><span class="image-fallback" aria-hidden="true">♡</span></span>
+                    <span class="photo-caption">bizim hikâyemiz</span>
+                </button>
+                <button class="photo-card photo-four" type="button" data-caption="Biriktireceğimiz nice güzel ana">
+                    <span class="photo-image"><img src="img/image4.png" alt="Birlikte biriktireceğimiz güzel anlar" loading="eager" decoding="async"><span class="image-fallback" aria-hidden="true">♡</span></span>
+                    <span class="photo-caption">nice anılara</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="step5-text" class="finale hidden" aria-live="polite">
+            <span class="finale-heart" aria-hidden="true">♡</span>
+            <h2 class="doodle-text">Seninle her an<br>çok güzel...</h2>
+            <p>İyi ki benimlesin.</p>
+            <button id="restart-btn" class="doodle-button restart-button hidden" type="button">Baştan yaşa <span aria-hidden="true">↺</span></button>
+        </section>
+
+        <p class="bottom-note" aria-hidden="true">kalpten kalbe, hep böyle <span>♡</span></p>
+    </main>
+
+    <dialog class="photo-dialog" aria-label="Fotoğrafı büyüt">
+        <button class="dialog-close" type="button" aria-label="Fotoğrafı kapat">×</button>
+        <img class="dialog-image" alt="">
+        <p class="dialog-caption"></p>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
